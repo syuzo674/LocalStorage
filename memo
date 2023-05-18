@@ -167,3 +167,4 @@ function highlightSelectedDate() {
         }).addClass('calendar-date-selected');
     }
 }
+

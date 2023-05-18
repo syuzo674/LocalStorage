@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Calendar</h1>
+    <div id="calendar-container">
+        <div id="calendar-header">
+            <!-- 前月に移動するボタン -->
+            <button id="prev-month-btn">&lt;</button>
+            <h2 id="current-month"></h2>
+            <!-- 翌月に移動するボタン -->
+            <button id="next-month-btn">&gt;</button>
+        </div>
+        <table id="calendar">
+            <thead>
+                <!-- 曜日を表示するセル -->
+                <tr>
+                    <th id="Sun">Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th id="Sat">Sat</th>
+                </tr>
+            </thead>
+            <!-- カレンダーの日付を表示するテーブルボディ -->
+            <tbody id="calendar-body">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="todo-container">
+        <h3>add ToDo</h3>
+        <!-- 日付を追加するフォーム -->
+        <input type="date" id="date-input">
+        <!-- ToDoを追加するフォーム -->
+        <input type="text" id="task-input" placeholder="Enter a task">
+        <!-- ToDoを追加するボタン -->
+        <button id="add-todo-btn">Add ToDo</button>
+        <!-- ToDoを表示するリスト -->
+        <h3>ToDo List</h3>
+        <ul id="todo-list"></ul>
+        <!-- すべてのToDoをクリアするボタン -->
+        <button id="clear-all-btn">Clear All Tasks</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
